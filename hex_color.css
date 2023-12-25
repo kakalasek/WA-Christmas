@@ -1,30 +1,36 @@
 body {
   margin: 0px;
-  padding: 0px;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .nav-bar {
   box-sizing: border-box;
   display: flex;
-  width: 100%;
   height: 5vh;
   border: black 2px solid;
   align-items: center;
   justify-content: space-around;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: large;
+  font-size: 1.5rem;
 }
 
 .hex-game {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 6vw;
+  row-gap: 5vw;
 }
 
 .guessed-color {
+  font-size: 3rem;
 }
 
 .color-options {
 }
 
 .guess-prompt {
+  font-size: 1.5rem;
+  color: grey;
 }
 
 .difficulty-options {
