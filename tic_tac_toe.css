@@ -1,0 +1,14 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.nav-bar {
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  height: 5vh;
+  border: black 2px solid;
+  align-items: center;
+  justify-content: space-around;
+}
