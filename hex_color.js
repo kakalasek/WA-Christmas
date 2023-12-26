@@ -48,12 +48,14 @@ const createColorOption = (color) => {
   // Adding event listener for when the color is chosen
   colorOption.addEventListener("click", () => {
     if (win === false) {
+      // Right pick
       if (`#${color.toUpperCase()}` === guessedColor.textContent) {
         win = true;
         guessPrompt.textContent = "YOU HAVE WON";
         guessedColor.style.color = guessedColor.textContent;
         guessPrompt.appendChild(createRestartButton());
       } else {
+        // Wrong pick
         colorOption.remove();
         guessPrompt.textContent = "WRONG - TRY AGAIN";
       }
