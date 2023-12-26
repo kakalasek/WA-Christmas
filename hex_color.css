@@ -26,6 +26,15 @@ body {
 }
 
 .color-options {
+  display: flex;
+  column-gap: 1vw;
+}
+
+.color-option {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
 }
 
 .guess-prompt {
