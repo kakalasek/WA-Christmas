@@ -13,12 +13,19 @@ body {
   font-size: 1.5rem;
 }
 
+.playing-field-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vh;
+}
+
 /* Below code copied from 'https://medium.com/cloudaper/how-to-create-a-flexible-square-grid-with-css-grid-layout-ea48baf038f3' */
+/* It has been slightly edited tho */
 
 .playing-field {
   display: grid;
-  padding: 1vh;
-  grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
+  grid-template-columns: repeat(3, 250px);
   grid-auto-rows: 1fr;
 }
 
@@ -80,9 +87,9 @@ body {
 /* It has been slightly edited tho */
 
 .circle {
-  width: 85%;
-  height: 85%;
-  border: 10px solid blue;
+  width: 84%;
+  height: 84%;
+  border: 20px solid blue;
   border-radius: 50%;
   margin: auto;
 }
